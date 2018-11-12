@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [FirstTestSuite]">
+  <test thread-count="5" name="PositiveTest(failed)">
+    <classes>
+      <class name="com.herokuapp.theinternet.PositiveTests">
+        <methods>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.herokuapp.theinternet.PositiveTests -->
+    </classes>
+  </test> <!-- PositiveTest(failed) -->
   <test thread-count="5" name="NegativeTest(failed)">
     <classes>
       <class name="com.herokuapp.theinternet.NegativeTests">
         <methods>
-          <include name="incorrectPasswordTest"/>
+          <include name="negativeTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.herokuapp.theinternet.NegativeTests -->
     </classes>

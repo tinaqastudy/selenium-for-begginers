@@ -1,11 +1,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-  
-<suite name="ExceptionsTestsSuite" verbose="1" >
 
-  <test name="ExceptionsTest" >
-    <classes>
-       <class name="com.herokkuapp.theinternet.ExceptionTests" />
-    </classes>
-  </test>
+<suite name="ExceptionsTestsSuite" verbose="1">
+
+	<test name="ExceptionsTest">
+		<classes>
+			<class name="com.herokuapp.theinternet.ExceptionsTests">
+				<methods>
+					<include name="staleElementTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
 
 </suite>
